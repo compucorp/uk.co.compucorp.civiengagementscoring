@@ -8,8 +8,9 @@ use CRM_CiviEngagementScoring_ExtensionUtil as E;
  * @see https://wiki.civicrm.org/confluence/display/CRMDOC/QuickForm+Reference
  */
 class CRM_CiviEngagementScoring_Form_EngagementScore extends CRM_CivirulesActions_Form_Form {
-  public function buildQuickForm() {
 
+  public function buildQuickForm() {
+    $this->add('hidden', 'rule_action_id');
     // add form elements
     $this->add(
       'text',
