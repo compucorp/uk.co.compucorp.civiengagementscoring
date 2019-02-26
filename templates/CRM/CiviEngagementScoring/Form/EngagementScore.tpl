@@ -1,15 +1,11 @@
-{* HEADER *}
-
-{* FIELD EXAMPLE: OPTION 1 (AUTOMATIC LAYOUT) *}
-
-{foreach from=$elementNames item=elementName}
+<h3>Engagement Points</h3>
+<div class="crm-block crm-form-block crm-form-block-container">
   <div class="crm-section">
-    <div class="label">{$form.$elementName.label}</div>
-    <div class="content">{$form.$elementName.html}</div>
+    <div class="label">{$form.engagement_points.label}</div>
+    <div class="content">{$form.engagement_points.html}</div>
     <div class="clear"></div>
   </div>
-{/foreach}
-
+</div>
 <div class="crm-submit-buttons">
-{include file="CRM/common/formButtons.tpl" location="bottom"}
+  {include file="CRM/common/formButtons.tpl" location="bottom"}
 </div>

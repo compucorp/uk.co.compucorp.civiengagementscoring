@@ -2,25 +2,19 @@
 <extension key="uk.co.compucorp.civiengagementscoring" type="module">
   <file>civiengagementscoring</file>
   <name>FIXME</name>
-  <description>FIXME</description>
+  <description>Civi Engagement Scoring</description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>Tunbola Ogunwande</author>
-    <email>tunbolawande@yahoo.com</email>
+    <author>Compucorp</author>
+    <email>info@compucorp.co.uk</email>
   </maintainer>
-  <urls>
-    <url desc="Main Extension Page">http://FIXME</url>
-    <url desc="Documentation">http://FIXME</url>
-    <url desc="Support">http://FIXME</url>
-    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
-  </urls>
   <releaseDate>2019-02-25</releaseDate>
   <version>1.0</version>
   <develStage>alpha</develStage>
   <compatibility>
     <ver>5.0</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments></comments>
   <civix>
     <namespace>CRM/CiviEngagementScoring</namespace>
   </civix>

@@ -11,9 +11,25 @@
   float: right;
 }
 .engagement_progress_bar {
-  margin-top: 5px;
+  margin-top: 20px;
   width: 100%;
   height: 10px;
-  background-color: green;
+  background-color: #44cb7e;
   border-radius: 5px;
+}
+.engagement-arrow {
+  background-image: url("../images/engagement-icon.svg");
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+.engagement-block {
+  float:left;
+}
+.help-icon {
+  background-image: url("../images/help-icon.svg");
+  height: 12px;
+  width: 12px;
+  float: right;
+  margin-left: 3px;
 }

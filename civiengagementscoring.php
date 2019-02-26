@@ -134,6 +134,9 @@ function civiengagementscoring_civicrm_entityTypes(&$entityTypes) {
   _civiengagementscoring_civix_civicrm_entityTypes($entityTypes);
 }
 
+/**
+ * Implementation of hook_civicrm_pageRun
+ */
 function civiengagementscoring_civicrm_pageRun($page) {
   $hooks = [
     new CRM_CiviEngagementScoring_Hook_PageRun_AddEngagementScoringWidget(),

@@ -13,9 +13,12 @@
 
 </script>
 <div id="contact_engagement_score">
-  <div class="engagement_text">Engagement Score</div>
-  <div class="engagement_score">100</div>
-  <br/>
-  <div class="engagement_progress_bar"></div>
-
+  <div class="engagement-block">
+    <div class="engagement-arrow"></div>
+  </div>
+  <div class="engagement-block">
+    <div class="engagement_text">Engagement Score</div>
+    <div class="engagement_score">100<span class="help-icon"></span></div>
+    <div class="engagement_progress_bar"></div>
+  </div>
 </div>
