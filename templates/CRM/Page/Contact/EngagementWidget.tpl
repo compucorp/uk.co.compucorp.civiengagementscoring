@@ -16,7 +16,7 @@
   <div class="engagement-block">
     <div class="engagement-arrow"></div>
   </div>
-  <div class="engagement-block">
+  <div class="engagement-block engagement-block-content">
     <div class="engagement_text">Engagement Score</div>
     <div class="engagement_score">100<span class="help-icon"></span></div>
     <div class="engagement_progress_bar"></div>

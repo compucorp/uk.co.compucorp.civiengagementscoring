@@ -1,15 +1,19 @@
 #contact_engagement_score {
   float: right;
   margin: 10px 50px 0 0;
-  font-weight: bold;
 }
+
 .engagement_text {
+  font-size: 12px;
   float: left;
-  margin-right: 50px;
 }
+
 .engagement_score {
+  font-size: 16px;
   float: right;
+  font-weight: 600;
 }
+
 .engagement_progress_bar {
   margin-top: 20px;
   width: 100%;
@@ -17,19 +21,27 @@
   background-color: #44cb7e;
   border-radius: 5px;
 }
+
 .engagement-arrow {
   background-image: url("../images/engagement-icon.svg");
   height: 30px;
   width: 30px;
   margin-right: 8px;
 }
+
 .engagement-block {
   float:left;
 }
+
+.engagement-block-content {
+  width: 210px;
+}
+
 .help-icon {
   background-image: url("../images/help-icon.svg");
   height: 12px;
   width: 12px;
   float: right;
-  margin-left: 3px;
+  margin-left: 5px;
+  margin-top: 2px;
 }
