@@ -29,6 +29,12 @@ class CRM_CiviEngagementScoring_Form_EngagementScore extends CRM_CivirulesAction
   }
 
   public function postProcess() {
+    if (isset($this->_submitValues['engagement_points'])) {
+      $data['engagement_points'] = $this->_submitValues['engagement_points'];
+      $this->ruleAction->action_params = serialize($data);
+      $this->ruleAction->save();
+    }
+
     parent::postProcess();
   }
 }

@@ -24,4 +24,11 @@ class CRM_CiviEngagementScoring_Rules_Actions_ContactEngagementScore extends CRM
   public function processAction(CRM_Civirules_TriggerData_TriggerData $triggerData) {
 
   }
+
+  public function userFriendlyConditionParams() {
+    $params = $this->getActionParameters();
+    if (!empty($params['engagement_points'])) {
+      return "Points: ". $params['engagement_points'];
+    }
+  }
 }
