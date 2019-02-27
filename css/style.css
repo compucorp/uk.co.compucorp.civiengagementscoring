@@ -1,6 +1,8 @@
 #contact_engagement_score {
   float: right;
-  margin: 10px 50px 0 0;
+  /* 45px is calculated as:
+   * (120px (contact info bar height) - 30px (height of the component)) / 2 */
+  margin: 45px 50px 0 0;
 }
 
 .engagement_text {
