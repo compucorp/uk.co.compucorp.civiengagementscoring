@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension key="uk.co.compucorp.civiengagementscoring" type="module">
   <file>civiengagementscoring</file>
-  <name>FIXME</name>
+  <name>Civi Engagement Scoring</name>
   <description>Civi Engagement Scoring</description>
   <license>AGPL-3.0</license>
   <maintainer>

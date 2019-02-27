@@ -18,6 +18,15 @@ class CRM_CiviEngagementScoring_Upgrader extends CRM_Civiengagementscoring_Upgra
     }
   }
 
+  /**
+   * Example: Run an external SQL script when the module is installed.
+   */
+  public function uninstall() {
+    if ($this->isExtensionEnabled('org.civicoop.civirules')) {
+      $this->executeSqlFile('sql/delete_engagement_action.sql');
+    }
+  }
+
   public function isExtensionEnabled($key) {
     $isEnabled = CRM_Core_DAO::getFieldValue(
       'CRM_Core_DAO_Extension',
