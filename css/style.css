@@ -39,15 +39,6 @@
   width: 210px;
 }
 
-.help-icon {
-  background-image: url("../images/help-icon.svg");
-  height: 12px;
-  width: 12px;
-  float: right;
-  margin-left: 5px;
-  margin-top: 2px;
-}
-
 .crm-container .ui-progressbar-value {
   background: #44cb7e none no-repeat fixed center;
 }
