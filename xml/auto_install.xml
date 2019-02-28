@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<CustomData>
+  <CustomGroups>
+    <CustomGroup>
+      <name>Engagement_Scoring</name>
+      <title>Engagement Scoring</title>
+      <extends>Contact</extends>
+      <style>Tab</style>
+      <collapse_display>0</collapse_display>
+      <help_pre></help_pre>
+      <help_post></help_post>
+      <weight>6</weight>
+      <is_active>1</is_active>
+      <table_name>civicrm_value_engagement_sc_12</table_name>
+      <is_multiple>0</is_multiple>
+      <collapse_adv_display>0</collapse_adv_display>
+      <created_date>2019-02-28 11:00:59</created_date>
+      <is_reserved>0</is_reserved>
+      <is_public>1</is_public>
+    </CustomGroup>
+  </CustomGroups>
+  <CustomFields>
+    <CustomField>
+      <name>Engagement_Points</name>
+      <label>Engagement Points</label>
+      <data_type>Float</data_type>
+      <html_type>Text</html_type>
+      <default_value>0</default_value>
+      <is_required>0</is_required>
+      <is_searchable>1</is_searchable>
+      <is_search_range>1</is_search_range>
+      <weight>1</weight>
+      <is_active>1</is_active>
+      <is_view>0</is_view>
+      <text_length>255</text_length>
+      <note_columns>60</note_columns>
+      <note_rows>4</note_rows>
+      <column_name>engagement_points_19</column_name>
+      <in_selector>0</in_selector>
+      <custom_group_name>Engagement_Scoring</custom_group_name>
+    </CustomField>
+  </CustomFields>
+</CustomData>
