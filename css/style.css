@@ -2,16 +2,16 @@
   float: right;
   /* 45px is calculated as:
    * (120px (contact info bar height) - 30px (height of the component)) / 2 */
-  margin: 45px 50px 0 0;
+  margin: 17px 50px 0 0;
 }
 
 .engagement_text {
-  font-size: 12px;
+  font-size: 14px;
   float: left;
 }
 
 .engagement_score {
-  font-size: 16px;
+  font-size: 14px;
   float: right;
   font-weight: 600;
 }
@@ -20,7 +20,7 @@
   margin-top: 20px;
   width: 100%;
   height: 10px;
-  background-color: #44cb7e;
+  background-color: #222831;
   border-radius: 5px;
 }
 
@@ -46,4 +46,12 @@
   float: right;
   margin-left: 5px;
   margin-top: 2px;
+}
+
+.crm-container .ui-progressbar-value {
+  background: #44cb7e none no-repeat fixed center;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #ffffff;
 }

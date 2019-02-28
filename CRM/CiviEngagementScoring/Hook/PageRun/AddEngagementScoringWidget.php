@@ -41,8 +41,7 @@ class CRM_CiviEngagementScoring_Hook_PageRun_AddEngagementScoringWidget {
     CRM_Core_Region::instance('page-body')->add([
       'template' => "{$this->templatePath}/CRM/Page/Contact/EngagementWidget.tpl"
     ]);
-    $basePath = CRM_CiviEngagementScoring_ExtensionUtil::path();
-    $page->assign('extensionPath', $basePath);
+    $page->assign('engagementPoint', $this->getContactEngagementPoint());
   }
 
   /**
@@ -54,5 +53,30 @@ class CRM_CiviEngagementScoring_Hook_PageRun_AddEngagementScoringWidget {
    */
   private function shouldHandle($page) {
     return $page instanceof CRM_Contact_Page_View_Summary;
+  }
+
+  /**
+   * Gets the engagement points for the contact.
+   *
+   * @return int
+   */
+  private function getContactEngagementPoint() {
+    $contactId = CRM_Utils_Request::retrieve('cid', 'Integer');
+    $customFieldID = CRM_Core_BAO_CustomField::getCustomFieldID('Engagement_Points', 'Engagement Scoring');
+    $customFieldName = "custom_" . $customFieldID;
+    $engagementPoints = 0;
+
+    if ($contactId && $customFieldID) {
+      $result = civicrm_api3('Contact', 'getsingle', [
+        'return' => [$customFieldName],
+        'id' => $contactId,
+      ]);
+
+      if (!empty($result[$customFieldName])) {
+        $engagementPoints = $result[$customFieldName];
+      }
+    }
+
+    return $engagementPoints;
   }
 }
