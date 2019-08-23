@@ -25,13 +25,6 @@
   border: 1px solid #ffffff;
 }
 
-#contact_engagement_score .engagement-arrow {
-  background-image: url("../images/engagement-icon.svg");
-  height: 30px;
-  width: 30px;
-  margin-right: 8px;
-}
-
 #contact_engagement_score .engagement-block {
   float:left;
 }
