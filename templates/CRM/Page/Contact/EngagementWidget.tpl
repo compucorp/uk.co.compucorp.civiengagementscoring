@@ -1,20 +1,29 @@
 <script type="text/javascript">
   {literal}
+  var $ = CRM.$;
+  var currentEngagementValue = {/literal} {$engagementPoint} {literal};
 
-  CRM.$(function($) {
+  $(function () {
     positionEngagementWidget();
-    CRM.$( "#progressbar" ).progressbar({
-      value: {/literal} {$engagementPoint} {literal}
-    });
+    initEngagementWidget();
   });
 
-  function positionEngagementWidget() {
-    // Move fields
-    CRM.$('#contact_engagement_score').insertAfter(CRM.$('#contactname-block'));
+  /**
+   * Initiates the widget with the current engagement value
+   */
+  function initEngagementWidget () {
+    $('#progressbar').progressbar({ value: currentEngagementValue });
+  }
+
+  /**
+   * Injects the widget into CiviCRM Contact Name block
+   */
+  function positionEngagementWidget () {
+    $('#contact_engagement_score').insertAfter($('#contactname-block'));
   }
   {/literal}
-
 </script>
+
 <div id="contact_engagement_score">
   <div class="engagement-block engagement-block-content">
     <div class="engagement_text">Engagement Score</div>
