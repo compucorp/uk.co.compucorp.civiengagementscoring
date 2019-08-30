@@ -5,44 +5,34 @@
   margin: 17px 50px 0 0;
 }
 
-.engagement_text {
+#contact_engagement_score .engagement_text {
   font-size: 14px;
   float: left;
 }
 
-.engagement_score {
+#contact_engagement_score .engagement_score {
   font-size: 14px;
   float: right;
   font-weight: 600;
 }
 
-.engagement_progress_bar {
+#contact_engagement_score .engagement_progress_bar {
   margin-top: 20px;
   width: 100%;
   height: 10px;
   background-color: #222831;
   border-radius: 5px;
+  border: 1px solid #ffffff;
 }
 
-.engagement-arrow {
-  background-image: url("../images/engagement-icon.svg");
-  height: 30px;
-  width: 30px;
-  margin-right: 8px;
-}
-
-.engagement-block {
+#contact_engagement_score .engagement-block {
   float:left;
 }
 
-.engagement-block-content {
+#contact_engagement_score .engagement-block-content {
   width: 210px;
 }
 
-.crm-container .ui-progressbar-value {
+#contact_engagement_score .ui-progressbar-value {
   background: #44cb7e none no-repeat fixed center;
-}
-
-.ui-widget.ui-widget-content {
-  border: 1px solid #ffffff;
 }
